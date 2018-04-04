@@ -1,12 +1,93 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-  </head>
 
-  <body>
-      <span>Processing... Site will be up momentarily.</span>
-  </body>
+<head>
+  <!-- NORMALIZE CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- MAIN STYLESHEET -->
+	<link rel="stylesheet" type="text/css" href="styles/css/main.css">
+  <!-- GOOGLE FONT CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,500i|Oswald:300,400" rel="stylesheet">
+  <title>Harry Zumwalt</title>
+</head>
 
+<body>
+	<div id="banner" class="skew">
+
+		<canvas id="canvas"></canvas>
+
+    <div class="wrapper">
+  		<div class="bannerContent unskew">
+  			<span class="mainTitle">Harry Zumwalt</span><br/>
+  			<p class="subText">I’m a designer, full-stack developer, javascript masochist, and functional programming partisan.</p>
+  			<a href="#" class="bannerButton">Contact</a>
+  		</div>
+    </div>
+
+	</div>
+
+	<div id="divider" class="skew"></div>
+  <div class="skew" id="highlights">
+    <div class="wrapper unskew">
+
+      <div class="design highlightItem">
+        <span class="highTitle">Design</span><br/>
+        <img src="images/design.png" class="designImg" alt="DESIGN"><br/>
+        <span class="highDescription designDesc">I design sleek, modern webpages that work seamlessly on all devices.</span>
+      </div>
+
+      <div class="front-end highlightItem">
+        <span class="highTitle frontTitle">Front End</span><br/>
+        <img src="images/front-end.png" class="frontImg" alt="FRONTEND"><br/>
+        <span class="highDescription frontDesc">I code responsive front-ends using tools like SCSS, Modernizer, and React.</span>
+      </div>
+
+      <div class="back-end highlightItem">
+        <span class="highTitle">Back End</span><br/>
+        <img src="images/node.png" class="backImg" alt="BACKEND"><br/>
+        <span class="highDescription">I build RESTful APIs using Node, Express, MongoDB and other popular JS tech.</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="projects">
+    <div class="wrapper">
+      <!-- PROJECT 1 EXERCISE API -->
+      <div class="projectItem">
+        <img class="rightImg projInline" src="images/openTrain.png" alt="PROJECT IMAGE">
+
+        <div class="projText projInline">
+          <span class="projTitle">OpenTrain API</span>
+          <a href="https://github.com/harrygz889/open-train" class="projButton">Github</a>
+          <!-- <a href="" class="projButton">Explore</a> -->
+        </div>
+
+      </div>
+
+      <!-- PROJECT 2 JAMIE -->
+      <div class="projectItem">
+        <img class="leftImg projInline" src="images/jamie.png" alt="PROJECT IMAGE">
+
+        <div class="projText projInline jamieProj">
+          <span class="projTitle">Jamie Timpa</span>
+          <a href="http://jamietimpa.com" class="projButton">Explore</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="wrapper">
+      <span><a href="mailto:harry.zum@gmail.com">harry.zum@gmail.com</a></span>
+      <span><a href="https://github.com/harrygz889"><img src="images/github.png" alt="GITHUB">harrygz889</a></span>
+    </div>
+  </div>
+
+  <footer id="footer">Copyright 2018 Harry Zumwalt</footer>
+
+
+  <!-- Javascript for the banner -->
+	<script src="canvas.js"></script>
+</body>
 </html>
