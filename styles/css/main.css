@@ -66,7 +66,14 @@ body {
   height: 50px;
   background-color: #FFFCFC;
   position: fixed;
-  top: 600px; }
+  top: 600px;
+  text-align: center; }
+  #divider img {
+    height: auto;
+    width: 40px;
+    position: relative;
+    top: 15px;
+    left: 10px; }
 
 #highlights {
   position: relative;

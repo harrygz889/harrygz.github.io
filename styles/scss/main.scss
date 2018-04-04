@@ -2,7 +2,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
-
 body {
 	overscroll-behavior-y: none;
 }
@@ -75,6 +74,14 @@ body {
 	background-color: #FFFCFC;
 	position: fixed;
 	top: 600px;
+	text-align: center;
+	img {
+		height: auto;
+		width: 40px;
+		position: relative;
+		top: 15px;
+		left: 10px;
+	}
 }
 
 #highlights {
