@@ -15,6 +15,7 @@ html {
   color: $offwhite;
 }
 
+
 .blue-fill {
   color: $dot-blue;
 }
@@ -103,13 +104,12 @@ nav {
 }
 
 .bio {
-  overflow-x: hidden;
   margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
   .wrapper {
     width: 85%;
   }
-  display: flex;
-  justify-content: center;
   .bio-header {
     display: flex;
     justify-content: center;
@@ -120,31 +120,32 @@ nav {
     justify-content: center;
   }
   .bio-text {
-    width: 50rem;
     position: relative;
     left: .6rem;
+    top: 4rem;
     font-size: 14pt;
   }
   h2 {
     font-size: 25pt;
   }
-  img {
+  .bio-img {
+    display: flex;
+    justify-content: center;
     position: relative;
-    bottom: .3rem;
+  }
+  img {
     height: 12rem;
     width: 12rem;
     border-radius: .2rem;
-    margin: 3rem;
-    margin-top: 1rem;
     transition: all .4s ease-in-out;
   }
   .top-right-border {
     background-color: transparant;
     width: 2rem;
     height: 2rem;
-    position: relative;
-    left: 16.2rem;
-    bottom: .4rem;
+    position: absolute;
+    bottom: 11.2rem;
+    left: 11rem;
     border-top: solid 2px $dot-blue;
     border-right: solid 2px $dot-blue;
     transition: all .4s ease-in-out;
@@ -153,35 +154,32 @@ nav {
     background-color: transparant;
     width: 2rem;
     height: 2rem;
-    position: relative;
-    top: 12rem;
-    right: 16.2rem;
+    position: absolute;
+    top: 11.2rem;
+    right: 11rem;
     border-bottom: solid 2px $dot-blue;
     border-left: solid 2px $dot-blue;
   }
-  .bio-img {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 12.2rem;
-  }
   .full-border-right {
     background-color: transparant;
-    width: 12.2rem;
-    height: 12rem;
-    position: relative;
-    right: 16.6rem;
-    top: 2rem;
+    width: 11rem;
+    height: 11rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 2rem;
     border-right: solid 2px rgba(69, 162, 158, 0);
     border-bottom: solid 2px rgba(69, 162, 158, 0);
     transition: all .4s ease-in-out;
   }
   .full-border-left {
     background-color: transparant;
-    width: 12.2rem;
-    height: 12rem;
-    position: relative;
-    right: 30.4rem;
+    // width: 11rem;
+    // height: 11rem;
+    width: .1rem;
+    height: .1rem;
+    position: absolute;
+    left: -.4rem;
+    top: -.6rem;
     border-top: solid 2px rgba(69, 162, 158, 0);
     border-left: solid 2px rgba(69, 162, 158, 0);
     transition: all .4s ease-in-out;
@@ -194,14 +192,11 @@ nav {
     border-bottom: solid 2px rgba(69, 162, 158, 1);
   }
   .full-border-left {
+    width: 11rem;
+    height: 11rem;
     border-top: solid 2px rgba(69, 162, 158, 1);
     border-left: solid 2px rgba(69, 162, 158, 1);
   }
-  // to bring the top right corner back down since the img changes size
-  .top-right-border {
-    top: .5px;
-  }
-  // resizing the img which looks nice but forces a lot of minor tweaks**
   img {
     width: 12.6rem;
     height: 12.6rem;

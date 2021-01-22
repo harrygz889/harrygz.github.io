@@ -445,7 +445,6 @@ nav .wrapper {
 }
 
 .bio {
-  overflow-x: hidden;
   margin-bottom: 8rem;
   display: flex;
   justify-content: center;
@@ -463,31 +462,32 @@ nav .wrapper {
   justify-content: center;
 }
 .bio .bio-text {
-  width: 50rem;
   position: relative;
   left: 0.6rem;
+  top: 4rem;
   font-size: 14pt;
 }
 .bio h2 {
   font-size: 25pt;
 }
-.bio img {
+.bio .bio-img {
+  display: flex;
+  justify-content: center;
   position: relative;
-  bottom: 0.3rem;
+}
+.bio img {
   height: 12rem;
   width: 12rem;
   border-radius: 0.2rem;
-  margin: 3rem;
-  margin-top: 1rem;
   transition: all 0.4s ease-in-out;
 }
 .bio .top-right-border {
   background-color: transparant;
   width: 2rem;
   height: 2rem;
-  position: relative;
-  left: 16.2rem;
-  bottom: 0.4rem;
+  position: absolute;
+  bottom: 11.2rem;
+  left: 11rem;
   border-top: solid 2px #45A29E;
   border-right: solid 2px #45A29E;
   transition: all 0.4s ease-in-out;
@@ -496,35 +496,30 @@ nav .wrapper {
   background-color: transparant;
   width: 2rem;
   height: 2rem;
-  position: relative;
-  top: 12rem;
-  right: 16.2rem;
+  position: absolute;
+  top: 11.2rem;
+  right: 11rem;
   border-bottom: solid 2px #45A29E;
   border-left: solid 2px #45A29E;
 }
-.bio .bio-img {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  left: 12.2rem;
-}
 .bio .full-border-right {
   background-color: transparant;
-  width: 12.2rem;
-  height: 12rem;
-  position: relative;
-  right: 16.6rem;
-  top: 2rem;
+  width: 11rem;
+  height: 11rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 2rem;
   border-right: solid 2px rgba(69, 162, 158, 0);
   border-bottom: solid 2px rgba(69, 162, 158, 0);
   transition: all 0.4s ease-in-out;
 }
 .bio .full-border-left {
   background-color: transparant;
-  width: 12.2rem;
-  height: 12rem;
-  position: relative;
-  right: 30.4rem;
+  width: 0.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: -0.4rem;
+  top: -0.6rem;
   border-top: solid 2px rgba(69, 162, 158, 0);
   border-left: solid 2px rgba(69, 162, 158, 0);
   transition: all 0.4s ease-in-out;
@@ -535,11 +530,10 @@ nav .wrapper {
   border-bottom: solid 2px #45a29e;
 }
 .bio-img:hover .full-border-left {
+  width: 11rem;
+  height: 11rem;
   border-top: solid 2px #45a29e;
   border-left: solid 2px #45a29e;
-}
-.bio-img:hover .top-right-border {
-  top: 0.5px;
 }
 .bio-img:hover img {
   width: 12.6rem;
