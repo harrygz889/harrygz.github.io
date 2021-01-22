@@ -1,0 +1,295 @@
+@use '_normalize.scss';
+@use './package/_spartan.scss';
+
+$background: #0B0C10;
+$offwhite: #EAEAED;
+$dot-blue: #45A29E;
+$logo-blue: #66FCF1;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $background;
+  color: $offwhite;
+}
+
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.blue-fill {
+  color: $dot-blue;
+}
+.league-spartan {
+  font-family: "League Spartan";
+}
+
+.titillium-web-extra-light {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+}
+.titillium-web-light {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+.titillium-web-regular {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+.titillium-web-semi-bold {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: $offwhite;
+}
+
+.wrapper {
+  width: 95%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  a {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: $dot-blue;
+      transition: all .4s ease;
+      position: relative;
+      left: .2rem;
+    }
+    &:hover {
+      &:after {
+        width: 90%;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+  margin-bottom: 13rem;
+  .logo {
+    color: $logo-blue;
+    font-size: 25pt;
+    margin-bottom: 2rem;
+  }
+  .sub-header {
+    font-size: 15pt;
+    margin-bottom: 4rem;
+    position: relative;
+    left: 10px;
+  }
+  .button-banner {
+    border: solid 2px $dot-blue;
+    border-radius: .2rem;
+    padding: .5rem 1.6rem;
+    &:hover {
+      background-color: rgba(69, 162, 158, .36);
+    }
+  }
+}
+
+.bio {
+  margin-bottom: 8rem;
+  .wrapper {
+    width: 85%;
+  }
+  display: flex;
+  justify-content: center;
+  .bio-header {
+    display: flex;
+    justify-content: center;
+  }
+  .bio-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bio-text {
+    width: 50rem;
+    position: relative;
+    left: .6rem;
+    font-size: 14pt;
+  }
+  h2 {
+    font-size: 25pt;
+  }
+  img {
+    position: relative;
+    bottom: .3rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: .2rem;
+    margin: 3rem;
+    margin-top: 1rem;
+    transition: all .4s ease-in-out;
+  }
+  .top-right-border {
+    background-color: transparant;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    left: 16.2rem;
+    bottom: .4rem;
+    border-top: solid 2px $dot-blue;
+    border-right: solid 2px $dot-blue;
+    transition: all .4s ease-in-out;
+  }
+  .bottom-left-border {
+    background-color: transparant;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: 12rem;
+    right: 16.2rem;
+    border-bottom: solid 2px $dot-blue;
+    border-left: solid 2px $dot-blue;
+  }
+  .bio-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 12.2rem;
+  }
+  .full-border-right {
+    background-color: transparant;
+    width: 12.2rem;
+    height: 12rem;
+    position: relative;
+    right: 16.6rem;
+    top: 2rem;
+    border-right: solid 2px rgba(69, 162, 158, 0);
+    border-bottom: solid 2px rgba(69, 162, 158, 0);
+    transition: all .4s ease-in-out;
+  }
+  .full-border-left {
+    background-color: transparant;
+    width: 12.2rem;
+    height: 12rem;
+    position: relative;
+    right: 30.4rem;
+    border-top: solid 2px rgba(69, 162, 158, 0);
+    border-left: solid 2px rgba(69, 162, 158, 0);
+    transition: all .4s ease-in-out;
+  }
+}
+// BORDER ANIMATIONS ****
+.bio-img:hover {
+  .full-border-right {
+    border-right: solid 2px rgba(69, 162, 158, 1);
+    border-bottom: solid 2px rgba(69, 162, 158, 1);
+  }
+  .full-border-left {
+    border-top: solid 2px rgba(69, 162, 158, 1);
+    border-left: solid 2px rgba(69, 162, 158, 1);
+  }
+  // to bring the top right corner back down since the img changes size
+  .top-right-border {
+    top: .5px;
+  }
+  // resizing the img which looks nice but forces a lot of minor tweaks**
+  img {
+    width: 12.6rem;
+    height: 12.6rem;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+  h2 {
+    font-size: 25pt;
+  }
+  .skills-header {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .top-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+  .bottom-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .top-bar {
+    display: block;
+    width: 19rem;
+    height: 2px;
+    background-color: $dot-blue;
+    margin-bottom: 1.5rem;
+  }
+  .bottom-bar {
+    display: block;
+    width: 19rem;
+    height: 2px;
+    background-color: $dot-blue;
+    margin-top: 1.5rem;
+  }
+  img {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0 .4rem;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  .contact-content {
+    text-align: center;
+  }
+  h2 {
+    font-size: 25pt;
+  }
+  h3 {
+    margin-bottom: 3rem;
+  }
+  .contact-button {
+    border: solid 2px $dot-blue;
+    border-radius: .2rem;
+    padding: .5rem 1.2rem;
+    &:hover {
+      background-color: rgba(69, 162, 158, .36);
+    }
+  }
+  .line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: .2rem;
+  }
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  font-size: 8pt;
+}

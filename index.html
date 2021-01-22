@@ -1,96 +1,94 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/css/index.css">
+    <!-- Titillium Web Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,600&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <!-- NORMALIZE CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <!-- MAIN STYLESHEET -->
-	<link rel="stylesheet" type="text/css" href="styles/css/main.css">
-  <!-- GOOGLE FONT CDN -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,500i|Oswald:300,400" rel="stylesheet">
-  <title>Harry Zumwalt</title>
-</head>
 
-<body>
-	<div id="banner" class="skew">
+  <body>
+    <nav>
+      <div class="wrapper">
+        <a href="#bio" class="titillium-web-extra-light"><span class="blue-fill">.</span>bio</a>
+        <a href="#skills" class="titillium-web-extra-light"><span class="blue-fill">.</span>skills</a>
+        <a href="#contact" class="titillium-web-extra-light"><span class="blue-fill">.</span>contact</a>
+      </div>
+    </nav>
 
-		<canvas id="canvas"></canvas>
-
-    <div class="wrapper">
-  		<div class="bannerContent unskew">
-  			<span class="mainTitle">Harry Zumwalt</span><br/>
-  			<p class="subText">I’m a designer, full-stack developer, javascript masochist, and functional programming partisan.</p>
-  			<a href="#contact" class="bannerButton">Contact</a>
-  		</div>
+    <div class="banner">
+      <div class="wrapper">
+        <h1 class="logo league-spartan">.Harry Zumwalt</h1>
+        <h2 class="sub-header titillium-web-light">Problem Solver - Designer - Coder</h2>
+        <a href="#contact" class="titillium-web-semi-bold button-banner">Get in Touch</a>
+      </div>
     </div>
 
-	</div>
-
-	<div id="divider" class="skew">
-    <img class="downscroll" src="images/downscroll.png" alt="Scroll Down">
-  </div>
-
-  <div class="skew" id="highlights">
-    <div class="wrapper unskew">
-
-      <div class="design highlightItem">
-        <span class="highTitle">Design</span><br/>
-        <img src="images/design.png" class="designImg" alt="DESIGN"><br/>
-        <span class="highDescription designDesc">I design sleek, modern webpages that work seamlessly on all devices.</span>
-      </div>
-
-      <div class="front-end highlightItem">
-        <span class="highTitle frontTitle">Front End</span><br/>
-        <img src="images/front-end.png" class="frontImg" alt="FRONTEND"><br/>
-        <span class="highDescription frontDesc">I code responsive front-ends using tools like SCSS, Modernizer, and React.</span>
-      </div>
-
-      <div class="back-end highlightItem">
-        <span class="highTitle">Back End</span><br/>
-        <img src="images/node.png" class="backImg" alt="BACKEND"><br/>
-        <span class="highDescription">I build RESTful APIs using Node, Express, MongoDB and other popular JS tech.</span>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="projects">
-    <div class="wrapper">
-      <!-- PROJECT 1 EXERCISE API -->
-      <div class="projectItem">
-        <img class="rightImg projInline" src="images/openTrain.png" alt="PROJECT IMAGE">
-
-        <div class="projText projInline">
-          <span class="projTitle">OpenTrain API</span>
-          <a href="https://github.com/harrygz889/open-train" class="projButton">Github</a>
-          <!-- <a href="" class="projButton">Explore</a> -->
+    <div class="bio" id="bio">
+      <div class="wrapper">
+        <div class="bio-header">
+          <h2 class="league-spartan"><span class="blue-fill">.</span>Bio</h2>
         </div>
-
-      </div>
-
-      <!-- PROJECT 2 JAMIE -->
-      <div class="projectItem">
-        <img class="leftImg projInline" src="images/jamie.png" alt="PROJECT IMAGE">
-
-        <div class="projText projInline jamieProj">
-          <span class="projTitle">Jamie Timpa</span>
-          <a href="http://jamietimpa.com" class="projButton">Explore</a>
+        <div class="bio-area">
+          <div class="bio-img">
+            <!-- LOTS OF EXTRA DIVS FOR PORTRAIT BORDER -->
+            <div class="top-right-border"></div>
+            <img src="images/Avatar.png" alt="Avatar">
+            <div class="bottom-left-border"></div>
+            <div class="full-border-right"></div>
+            <div class="full-border-left"></div>
+          </div>
+          <div class="bio-text titillium-web-extra-light">
+            <span class="titillium-web-semi-bold">Hi! I’m a web designer and full-stack developer based in Nashville, TN.</span>
+          </br></br>I enjoy designing and building web experiences whether it’s front-end, back-end, or dead-end (Yeah, I’m calling you out Mark). </br></br>I’ve recently been working with all the hot-new isomorphic javascript tech, but I’m always looking to deep dive into whatever project excites me even if it involves new languages or tools; <span class="titillium-web-light">so let’s get in touch and talk shop!</span>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-  <div id="contact">
-    <div class="wrapper">
-      <span><a href="mailto:harry.zum@gmail.com">harry.zum@gmail.com</a></span>
-      <span><a href="https://github.com/harrygz889"><img src="images/github.png" alt="GITHUB">harrygz889</a></span>
+    <div class="skills" id="skills">
+      <div class="wrapper">
+        <div class="skills-header">
+          <h2 class="league-spartan"><span class="blue-fill">.</span>skills</h2>
+        </div>
+
+        <div class="skills-imgs">
+          <div class="top-bar"></div>
+          <div class="top-row">
+            <img src="images/Balsalmiq.png" alt="Balsalmiq">
+            <img src="images/Sketch.png" alt="Sketch">
+            <img src="images/Sass.png" alt="Sass">
+            <img src="images/Github.png" alt="Github">
+            <img src="images/Javascript.png" alt="Javascript">
+          </div>
+
+          <div class="bottom-row">
+            <img src="images/Nodejs.png" alt="Nodejs">
+            <img src="images/React.png" alt="React">
+            <img src="images/Redux.png" alt="Redux">
+            <img src="images/Mongodb.png" alt="Mongodb">
+            <img src="images/Webpack.png" alt="Webpack">
+          </div>
+          <div class="bottom-bar"></div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer id="footer">Copyright 2018 Harry Zumwalt</footer>
+    <div class="contact" id="contact">
+      <div class="wrapper">
+        <div class="contact-content">
+          <h2 class="league-spartan"><span class="blue-fill">.</span>contact</h2>
+          <h3 class="titillium-web-light">I'm always looking for opportunites to grow and collaborate with others. Let's <span class="line-through">grab a coffee</span> make coffee and <span class="line-through">chat</span> zoom.</h3>
+          <a href="mailto:harry.zum@gmail.com" class="titillium-web-semi-bold contact-button">Contact Me</a>
+        </div>
+      </div>
+    </div>
 
+    <footer><h4 class="titillium-web-light">Designed and Built by <a href="http://harryzumwalt.com">Harry Zumwalt</a></h4></footer>
 
-  <!-- Javascript for the banner -->
-	<script src="canvas.js"></script>
-</body>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  </body>
 </html>
