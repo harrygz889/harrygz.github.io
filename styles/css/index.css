@@ -355,11 +355,6 @@ html {
   color: #EAEAED;
 }
 
-html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .blue-fill {
   color: #45A29E;
 }
@@ -450,6 +445,7 @@ nav .wrapper {
 }
 
 .bio {
+  overflow-x: hidden;
   margin-bottom: 8rem;
   display: flex;
   justify-content: center;
