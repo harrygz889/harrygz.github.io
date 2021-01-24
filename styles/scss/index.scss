@@ -284,3 +284,48 @@ footer {
   top: 2rem;
   font-size: 8pt;
 }
+
+@media (min-width: 650px) {
+  .banner {
+    .logo {
+      font-size: 40pt;
+    }
+    .sub-header {
+      font-size: 20pt;
+    }
+  }
+  .contact {
+    .wrapper {
+      width: 75%;
+    }
+  }
+}
+
+@media (min-width: 1050px) {
+  .banner {
+    .logo {
+      font-size: 50pt;
+    }
+    .sub-header {
+      font-size: 25pt;
+    }
+  }
+  .contact {
+    .wrapper {
+      width: 65%;
+    }
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .bio {
+    .wrapper {
+      width: 60%;
+    }
+    .bio-text {
+      left: 3.5rem;
+    }
+  }
+
+}
